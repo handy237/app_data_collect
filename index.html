@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link href="style.css" rel="stylesheet">
     <title> APP DATA COLLECT </title>
 </head>
 <body>
    <header>
-       <h1>DATA APP</h1>
-       <h2>Bienvenue dans DATA COLLECT</h2> 
-       <p><i>venez participer à notre sondage sur l'apprentissage de l'anglais dans les differentes platforms numerique</i></p>   
-       <p><i>vos reponses nous aidera à dévélopper un logiciel qui vous permettra d'apprende l'anglais en s'adaptant à vos préfernces</i></p>
+       <div class="titre"> 
+            <h1>DATA COLLECT</h1>
+        </div>
+        <div>
+            <h2>Bienvenue dans DATA COLLECT !</h2> 
+        </div> 
+       <div>
+            <p class="centre"><i>venez participer à notre sondage sur l'apprentissage de l'anglais dans les differentes platforms numerique</i></p>   
+       <p class="centre1"><i>vos reponses nous aidera à dévélopper un logiciel qui vous permettra d'apprende l'anglais en s'adaptant à vos préfernces</i></p>
 
+       </div>
+      
     </header>  
-    <nav>
-    <ul>
-        <li><h3>pourquoi voulez vous apprendre l'anglais ?</h3><p>partagez vos motivation</p><a href="sondage n°1">paticipez au sondage</a></li>
-        <li><h3>avez vous déja eu à abandonner l'apprentissage ?</h3><p>qu'est ce qui n'a pas marché</p><a href="sondage n°2">paticipez au sondage</a></li>
-        <li><h3>vous avez tenu votre apprentissage jusqu'a la fin</h3><P>qu'est ce qui vous à permis de rester ?</p><a href="sondage n°3">paticipez au sondage</a></li>
-        <li><h3>qu'aimerez vous voir dans une platform d'apprentissage d'anglais</h3><p>donner nous vos idée</p><a href="sondage n°4">paticipez au sondage</a></li>
-
-    </ul>    
-    </nav> 
-    <main>
-        <form action="#" method="post">
-            <ul>
+    <div>
+             <form action="#" method="post">
+                <ul>            
                 <li><label for="nom">votre noms</label>
                 <input type="text" id="nom" name="noms">
                 </li>
                 <li><label for="email">votre adresse email</label>
                 <input type="email" id="email" name="email">
                 </li>
-            </ul>
-    <section id="sondage n°1">
+                <button type="submit">envoyer</button>
+                </ul>
+            </form>
+           
+        </div>
+    <nav>
+    <ul>
+        <div class="section1">
+             <li><h3>pourquoi voulez vous apprendre l'anglais ?</h3><p>partagez vos motivation</p><a href="#sondage1">paticipez au sondage</a></li>
+       </div>
+       <div>
+        <li><h3>avez vous déja eu à abandonner l'apprentissage ?</h3><p>qu'est ce qui n'a pas marché</p><a href="#sondage2">paticipez au sondage</a></li>
+       </div>
+       <div>
+         <li><h3>vous avez tenu votre apprentissage jusqu'a la fin</h3><P>qu'est ce qui vous à permis de rester ?</p><a href="#sondage3">paticipez au sondage</a></li>
+       </div>
+       <div>
+         <li><h3>qu'aimerez vous voir dans une platform d'apprentissage d'anglais</h3><p>donner nous vos idée</p><a href="#sondage4">paticipez au sondage</a></li>
+       </div>
+    </ul>    
+    </nav> 
+    <main>
+        
+        <div>
+             <section id="sondage1">
         <h3>pourquoi voulez vous apprende l'anglais</h3>
         <form action="#" method="post">
             <h4>Quelle est votre principale raison pour apprendre l'anglais</h4>
@@ -76,7 +98,9 @@
             <button type="submit">envoyer</button>
         </form>    
     </section>
-    <section id="sondage n°2">
+        </div>
+        <div>
+             <section id="sondage2">
         <h3>avez vous déja eu à abandonner l'apprentissage ?</h3>
         <form action="#" method="post">
             <h4> Quelle etait vos dificultés </h4>
@@ -121,7 +145,9 @@
             <button type="submit">envoyer</button>
         </form>    
     </section>
-    <section id="sondage n°3">
+        </div>
+        <div>
+            <section id="sondage3">
         <h3>vous avez tenu votre apprentissage jusqu'a la fin ?</h3>
         <form id="#" method="post">
             <ul>
@@ -156,7 +182,7 @@
                  <il>
                     
                     <label for="autre">autres</label> 
-                    <textarea id="autre" name="autres" rows="3">
+                    <textarea id="autre" name="autres" rows="3">autre</textarea>
                 </il>
             
             </ul>
@@ -165,7 +191,9 @@
         </form>
         
     </section>
-    <section id="sondage n°4">
+        </div>
+        <div>
+            <section id="sondage4">
         <h3>qu'aimerez vous voir dans une platform d'apprentissage d'anglais</h3>
         <form id="#" method="post">
             <ul>
@@ -176,17 +204,127 @@
                 </li>
                 <li>
                     <label for="Autre">autres ? Expliquez nous </label>
-                    <textarea id="Autre" name="autres" rows="6"></textarea>
+                    <textarea id="AutreS" name="autresS" rows="6"></textarea>
                 </li>
 
             </ul>
             <button type="submit">envoyez</button>
         </form>
     </section>
+        </div>
+    
+    <div style="text-align: center; margin-top: 30px;">
+        <button id="voirResultats" class="btn-resultat"><a href="resultat.html">voir où vos resultats se situent</a></button>
+        
+    </div>
     
     </main>
+    <footer>>
+        <p class="centre">Merci d'avoir participé à notre sondage ! Vos réponses nous aideront à créer une meilleure expérience d'apprentissage de l'anglais pour tous.</p>
+        <p class="centre">Si vous avez des questions ou souhaitez en savoir plus sur notre projet, n'hésitez pas à nous contacter à l'adresse email suivante : <a href="mailto: handjiarielle@gmail.com">handjiarielle@gmail.com</a></p>
+        <p>&copy;2O26 handji arielle</p>
+    </footer>
 
+<script>
+// URL de ton Google Apps Script (à remplacer par la tienne)
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzRxWV25D3k-HZWJaJz6pS61wxUExzbn2TGTxlRnA5XJWoyHmMP5tf_H1T4_8sZOWTWhw/exec";
+// Fonction pour envoyer les données
+async function envoyerReponses(formulaireId, reponsesArray) {
+    try {
+        const response = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                formulaire: formulaireId,
+                reponses: reponsesArray
+            })
+        });
+        return true;
+    } catch (error) {
+        console.error('Erreur:', error);
+        return false;
+    }
+}
 
-
+// Attendre que la page soit complètement chargée
+document.addEventListener('DOMContentLoaded', function() {
+    // Récupérer tous les formulaires à l'intérieur des sections
+    const tousLesFormulaires = document.querySelectorAll('section form');
+    
+    // Pour chaque formulaire, on ajoute un écouteur d'événement
+    tousLesFormulaires.forEach(function(formulaire) {
+        formulaire.addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+            
+            // Trouver la section parente (celle qui contient ce formulaire)
+            const section = formulaire.closest('section');
+            const idFormulaire = section.id; // ex: "sondage1", "sondage2", ...
+            
+            // Tableau qui va contenir toutes les réponses
+            const reponses = [];
+            
+            // Récupérer tous les champs (input, textarea, select) à l'intérieur de ce formulaire
+            const champs = formulaire.querySelectorAll('input, textarea, select');
+            
+            // Parcourir chaque champ
+            for (let i = 0; i < champs.length; i++) {
+                const champ1 = champs[i];
+                // Ignorer les boutons de type submit ou button
+                if (champ1.type === 'submit' || champ1.type === 'button') {
+                    continue;
+                }
+                
+                // Pour les cases à cocher (checkbox) et boutons radio
+                if (champ1.type === 'checkbox' || champ1.type === 'radio') {
+                    if (!champ1.checked) {
+                        continue; // Si non coché, on ignore
+                    }
+                }
+                
+                // Récupérer la valeur
+                let valeur = champ1.value;
+                if (valeur === "") {
+                    valeur = "(vide)";
+                }
+                
+                // Essayer de trouver le label associé pour avoir l'intitulé de la question
+                let question = champ1.name || champ1.id || "question";
+                if (champ1.id) {
+                    const label = document.querySelector('label[for="' + champ1.id + '"]');
+                    if (label) {
+                        question = label.innerText.trim();
+                    }
+                }
+                
+                // Ajouter la paire (question, réponse) au tableau
+                reponses.push({
+                    question: question,
+                    reponse: valeur
+                });
+            }
+            
+            // Vérifier qu'il y a au moins une réponse
+            if (reponses.length === 0) {
+                alert("Veuillez répondre à au moins une question avant d'envoyer.");
+                return;
+            }
+            
+            // Envoyer les données vers Google Sheets
+            envoyerReponses(idFormulaire, reponses).then(function(succes) {
+                if (succes) {
+                    alert("Merci ! Vos réponses ont bien été enregistrées.");
+                    // Optionnel : réinitialiser le formulaire
+                    formulaire.reset();
+                } else {
+                    alert("Erreur lors de l'envoi. Vérifiez votre connexion internet ou l'URL du script.");
+                }
+            });
+        });
+    });
+});
+</script>
 </body>
 </html>
